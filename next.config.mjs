@@ -9,7 +9,12 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  
-}
+  experimental: {
+    serverActions: {
+      allowedOrigins: ["my-proxy.com", ".my-proxy.com"],
+      bodySizeLimit: "15mb", // Increased from default 1MB to accommodate file uploads
+    },
+  },
+};
 
-export default nextConfig
+export default nextConfig;

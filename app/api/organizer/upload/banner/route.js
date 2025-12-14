@@ -30,7 +30,7 @@ export async function POST(request) {
 
     // Parse multipart form data
     const formData = await request.formData();
-    const file = formData.get("file");
+    const file = formData.get("bannerImage");
     const eventId = formData.get("eventId");
 
     // Validate inputs
